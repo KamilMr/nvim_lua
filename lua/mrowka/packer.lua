@@ -13,10 +13,10 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use { 
-	  "rose-pine/neovim", 
+  use {
+	  "rose-pine/neovim",
 	  as = "rose-pine",
-	  config = function() 
+	  config = function()
 		  vim.cmd('colorscheme rose-pine')
 	  end
   }
@@ -43,6 +43,7 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},
 	  }
   }
+
   use {
 	  "williamboman/mason.nvim",
 	  "williamboman/mason-lspconfig.nvim",
