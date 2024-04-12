@@ -15,13 +15,13 @@ vim.keymap.set('n', '<Leader>uuu', ':!cpvimrc.sh<CR>', { noremap = true, silent 
 vim.keymap.set('n', '<Leader>vs', ':e ~/bin/<CR>', { noremap = true })
 vim.keymap.set('n', '<Leader>vv', ':e ~/.vimrc<CR>', { noremap = true })
 vim.keymap.set('n', '<Leader>vi', ':e ~/.config/i3/config<CR>', { noremap = true })
-vim.keymap.set('n', '<leader>n', ':NERDTreeFocus<CR>', { noremap = true })
-vim.keymap.set('n', '<C-n>', ':NERDTreeToggle<CR>', { noremap = true })
+--vim.keymap.set('n', '<leader>n', ':<CR>', { noremap = true })
+vim.keymap.set('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true })
 vim.keymap.set('n', '<leader>w', ':w!<cr>', { noremap = true })
 
 -- Insert Mode Remappings
-vim.keymap.set('i', 'clo', 'console.log();<Esc>==f(a', {})
-vim.keymap.set('i', 'cc', '// <Esc>i ', {})
+vim.keymap.set('i', 'clo', 'console.log();<Esc>F(a', {})
+-- vim.keymap.set('i', 'cc', '// <Esc>i ', {})
 vim.keymap.set('i', 'cct', '// TODO: <Esc>i', {})
 vim.keymap.set('i', '<Leader>cd', '<Esc>viwdi DONE<Esc>', {})
 vim.keymap.set('i', 'ccb', '/**/ <Esc>F*i', {})
@@ -50,3 +50,8 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left wind
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+
+vim.api.nvim_set_keymap('n', '<leader>f', ":lua require('telescope.builtin').find_files({ search_dirs = { '~/Documents/secondbrain/' } })<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>g', ":lua require('telescope.builtin').live_grep({ search_dirs = { '~/Documents/secondbrain/' } })<CR>", { noremap = true, silent = true })
+
+

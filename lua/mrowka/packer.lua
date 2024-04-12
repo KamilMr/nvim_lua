@@ -2,9 +2,7 @@
 
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
-
-return require('packer').startup(function(use)
-  -- Packer can manage itself
+return require('packer').startup(function(use) -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
   use {
@@ -47,6 +45,8 @@ return require('packer').startup(function(use)
   use {
 	  "williamboman/mason.nvim",
 	  "williamboman/mason-lspconfig.nvim",
+    "jay-babu/mason-null-ls.nvim",
+    "nvimtools/none-ls.nvim",
 	  "neovim/nvim-lspconfig",
   }
   end)
