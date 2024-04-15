@@ -11,7 +11,14 @@ require("null-ls").setup({
 })
 
 require("mason-null-ls").setup({
-    ensure_installed = { "prettier" },
+    ensure_installed = {
+      "prettier",
+      "eslint_d",
+      "typescript-language-server",
+      "bash-language-server",
+      "lua-language-server",
+      "styllua"
+    },
     automatic_installation = true,
 })
 
