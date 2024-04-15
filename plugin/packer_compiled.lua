@@ -99,10 +99,31 @@ _G.packer_plugins = {
     path = "/home/mrek/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
+  ["mason-null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/mrek/.local/share/nvim/site/pack/packer/start/mason-null-ls.nvim",
+    url = "https://github.com/jay-babu/mason-null-ls.nvim"
+  },
   ["mason.nvim"] = {
     loaded = true,
     path = "/home/mrek/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["mini.nvim"] = {
+    config = { "\27LJ\2\n\24\0\0\1\0\1\0\2'\0\0\0L\0\2\0\r%2l:%-2v›\1\1\0\5\0\r\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\0\0'\2\4\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\2\5\0B\0\2\0029\1\2\0005\3\t\0006\4\6\0009\4\a\0049\4\b\4=\4\n\3B\1\2\0013\1\f\0=\1\v\0K\0\1\0\0\21section_location\14use_icons\1\0\0\19have_nerd_font\6g\bvim\20mini.statusline\18mini.surround\1\0\1\fn_lines\3Ù\3\nsetup\fmini.ai\frequire\0" },
+    loaded = true,
+    path = "/home/mrek/.local/share/nvim/site/pack/packer/start/mini.nvim",
+    url = "https://github.com/echasnovski/mini.nvim"
+  },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "/home/mrek/.local/share/nvim/site/pack/packer/start/neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
+  },
+  ["none-ls.nvim"] = {
+    loaded = true,
+    path = "/home/mrek/.local/share/nvim/site/pack/packer/start/none-ls.nvim",
+    url = "https://github.com/nvimtools/none-ls.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -162,6 +183,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: mini.nvim
+time([[Config for mini.nvim]], true)
+try_loadstring("\27LJ\2\n\24\0\0\1\0\1\0\2'\0\0\0L\0\2\0\r%2l:%-2v›\1\1\0\5\0\r\0\0246\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\0016\0\0\0'\2\4\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\2\5\0B\0\2\0029\1\2\0005\3\t\0006\4\6\0009\4\a\0049\4\b\4=\4\n\3B\1\2\0013\1\f\0=\1\v\0K\0\1\0\0\21section_location\14use_icons\1\0\0\19have_nerd_font\6g\bvim\20mini.statusline\18mini.surround\1\0\1\fn_lines\3Ù\3\nsetup\fmini.ai\frequire\0", "config", "mini.nvim")
+time([[Config for mini.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
