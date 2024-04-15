@@ -3,7 +3,7 @@ Just a basic repository setup with lua for neovim.
 ## Installation process 
 https://github.com/KamilMr/nvim_lua
 
-git clone https://github.com/KamilMr/nvim_lua "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone git@github.com:KamilMr/nvim_lua.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 
 Unix, Linux Installation
 ```bash
