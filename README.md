@@ -5,11 +5,13 @@ https://github.com/KamilMr/nvim_lua
 
 git clone https://github.com/KamilMr/nvim_lua "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 
-linux instalation
+Unix, Linux Installation
 ```bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
+
+More details on packer installation see [packer](https://github.com/wbthomason/packer.nvim)
 
 ## Neovim Configuration
 
