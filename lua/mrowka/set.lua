@@ -1,5 +1,7 @@
 vim.opt.guicursor = ""
 
+vim.opt.wildignore:append{'node_modules'}
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -15,7 +17,7 @@ vim.opt.wrap = false
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir" --long running undoo https://youtu.be/w7i4amO_zaE?t=1414
-vim.opt.undofile = true 
+vim.opt.undofile = true
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true

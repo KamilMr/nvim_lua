@@ -1,2 +1,2 @@
 require("mrowka")
-require("packer")
+require("mrowka.packer")

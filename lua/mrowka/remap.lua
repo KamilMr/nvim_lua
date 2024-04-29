@@ -44,6 +44,7 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set("n", "<leader>i", [[:vim /<C-r><C-w>/ **/* | cdo s/<C-r><C-w>//g | update <Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>]])
 
 --  See `:help wincmd` for a list of all window commands
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
