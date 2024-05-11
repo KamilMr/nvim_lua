@@ -6,7 +6,7 @@ local function trim_trailing_whitespace()
 end
 
 -- Wywoływanie funkcji trim_trailing_whitespace przy zapisywaniu pliku
-vim.api.nvim_create_autocmd("BufWritePre", {
-  callback = trim_trailing_whitespace,
-})
+-- vim.api.nvim_create_autocmd("BufWritePre", {
+ -- callback = trim_trailing_whitespace,
+--})
 
