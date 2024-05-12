@@ -4,9 +4,9 @@ require('mason-lspconfig').setup()
 -- Setting up mason-null-ls to automatically manage null-ls sources
 require("null-ls").setup({
     sources = {
-        require("null-ls").builtins.formatting.prettier.with({
-            root_dir = require("null-ls.utils").root_pattern(".prettierrc", "package.json", ".git"),
-        }),
+      --require("null-ls").builtins.formatting.prettier.with({
+       --     root_dir = require("null-ls.utils").root_pattern(".prettierrc", "package.json", ".git"),
+        --}),
     },
 })
 
