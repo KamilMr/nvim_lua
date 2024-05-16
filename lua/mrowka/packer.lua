@@ -91,4 +91,7 @@ return require('packer').startup(function(use) -- Packer can manage itself
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,
   }
+
+  use{'folke/zen-mode.nvim'}
+
   end)
