@@ -55,4 +55,5 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.api.nvim_set_keymap('n', '<leader>f', ":lua require('telescope.builtin').find_files({ search_dirs = { '~/Documents/secondbrain/' } })<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>g', ":lua require('telescope.builtin').live_grep({ search_dirs = { '~/Documents/secondbrain/' } })<CR>", { noremap = true, silent = true })
 
-
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
