@@ -56,4 +56,4 @@ vim.api.nvim_set_keymap('n', '<leader>f', ":lua require('telescope.builtin').fin
 vim.api.nvim_set_keymap('n', '<leader>g', ":lua require('telescope.builtin').live_grep({ search_dirs = { '~/Documents/secondbrain/' } })<CR>", { noremap = true, silent = true })
 
 vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+--vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
